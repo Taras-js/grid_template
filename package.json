@@ -1,0 +1,14 @@
+{
+  "name": "grid_template",
+  "version": "1.0.0",
+  "description": "grid, template, auto-fitt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Taras Schevchenko <shev-taras@ys.ru>",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.27.9"
+  }
+}
