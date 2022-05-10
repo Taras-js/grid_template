@@ -25,7 +25,13 @@ h1{
 }
 
 
-@media (max-width: 459px) {
+@media (max-width: 320px) {
+    .main__archive {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (orientation: portrait) {
     .main__archive {
         display: flex;
         flex-direction: column;
