@@ -1,8 +1,11 @@
-h1{
+body {
+    width: 100%;
+}
+
+h1 {
     color: red;
     text-align: center;
 }
-
 
 .main__archive {
     display: grid;
@@ -10,24 +13,33 @@ h1{
     grid-gap: 32px;
     /*grid-auto-flow: dense;*/
 }
-.main__archive img{
-    width: 300px;
-}
-/* Extra-wide grid-posts */
-/*.archive__article:nth-child(31n + 1) {*/
-/*    grid-column: 1 / -1;*/
-/*}*/
-/*.archive__article:nth-child(16n + 2) {*/
-/*    grid-column: -3 / -1;*/
-/*}*/
-/*.archive__article:nth-child(16n + 10) {*/
-/*    grid-column: 1 / -2;*/
-/*}*/
 
-/* Single column display for phones */
+.main__archive img {
+    /*min-width: 300px;*/
+}
+
+.main__archive h2 {
+    text-align: center;
+}
+
+.archive__article:nth-child(31n + 1) {
+    grid-column: 1 / -1;
+}
+.archive__article:nth-child(16n + 2) {
+    grid-column: -3 / -1;
+}
+.archive__article:nth-child(16n + 10) {
+    grid-column: 1 / -2;
+}
+
+
 @media (max-width: 459px) {
     .main__archive {
         display: flex;
         flex-direction: column;
+    }
+    .main__archive img {
+        width: 300px;
+
     }
 }
