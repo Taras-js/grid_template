@@ -1,8 +1,11 @@
-h1{
+body {
+    width: 100%;
+}
+
+h1 {
     color: red;
     text-align: center;
 }
-
 
 .main__archive {
     display: grid;
@@ -10,8 +13,13 @@ h1{
     grid-gap: 32px;
     /*grid-auto-flow: dense;*/
 }
-.main__archive img{
-    width: 300px;
+
+.main__archive img {
+    /*min-width: 300px;*/
+}
+
+.main__archive h2 {
+    text-align: center;
 }
 /* Extra-wide grid-posts */
 /*.archive__article:nth-child(31n + 1) {*/
